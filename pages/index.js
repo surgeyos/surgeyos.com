@@ -142,6 +142,29 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
+          <div className="w-full" 
+               dangerouslySetInnerHTML={{
+                 __html: `
+                   <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                   <iframe 
+                     class="airtable-embed airtable-dynamic-height" 
+                     src="https://airtable.com/embed/appv5pBgAOPAwjw9s/shrGOibLmE5m5XQCr" 
+                     frameborder="0" 
+                     onmousewheel="" 
+                     width="100%" 
+                     height="875" 
+                     style="background: transparent; border: 1px solid #ccc;"
+                   ></iframe>
+                 `
+               }}
+          />
+        </div>
+      </section>
     </div>
   );
 };

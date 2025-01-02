@@ -21,8 +21,7 @@ export default function Home() {
           <p className="text-lg text-gray-700 leading-relaxed">
             Surgeyos is an open-source initiative unifying hardware, mechanical designs, electronics,
             software, and AI for medical robotics, VR simulation, and beyond. Our mission: make
-            medical technology accessible, affordable, and innovative. Join a vibrant community
-            of engineers, doctors, and tinkerers transforming healthcare one open-source
+            medical technology accessible, affordable, and innovative. Join this effort of transforming healthcare one open-source
             contribution at a time.
           </p>
         </motion.div>

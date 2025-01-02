@@ -1,34 +1,12 @@
-import { motion } from 'framer-motion';
+import HeroSection from '../components/HeroSection'; // or wherever you place it
+import { motion } from 'framer-motion'; // if you're still using Framer Motion for other sections
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <header className="relative flex items-center justify-center h-screen overflow-hidden bg-gray-100">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="absolute z-10 text-center"
-        >
-          <h1 className="text-5xl font-bold text-gray-800 mb-4">
-            Surgeyos
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Open-source innovations for surgery robotics, medical simulation &amp; VR, AI, and more!
-          </p>
-          <div className="mt-8 space-x-4">
-            <Link href="/projects" className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition">
-              View Projects
-            </Link>
-            <Link href="/docs" className="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300 transition">
-              Documentation
-            </Link>
-          </div>
-        </motion.div>
-        {/* Background decorative shapes/animations can go here */}
-      </header>
+      <HeroSection />
 
       {/* Introduction Section */}
       <section className="py-16 px-6 bg-white text-center">

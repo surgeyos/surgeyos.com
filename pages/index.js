@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Brain, Code, Book, ShoppingCart, Cpu, Monitor, Heart, Printer } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Logo from '../components/Logo';
 
 
 const LandingPage = () => {
@@ -49,7 +50,7 @@ const LandingPage = () => {
         {/* Navigation */}
         <nav className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-blue-600">Surgeyos</div>
+            <Logo />  
             <div className="flex gap-6">
               <a href="#projects" className="text-gray-600 hover:text-blue-600">Projects</a>
               <a href="#docs" className="text-gray-600 hover:text-blue-600">Documentation</a>

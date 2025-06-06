@@ -285,6 +285,62 @@ const LandingPage = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Surgeyos prototype</h2>
+            <img 
+              src="/images/IMG_2678.jpeg" 
+              alt="surgoys-prototype" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <img 
+              src="/images/IMG_2680.jpeg" 
+              alt="surgoys-prototype" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <img 
+              src="/images/IMG_2681.jpeg" 
+              alt="surgoys-prototype" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Form Section */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">

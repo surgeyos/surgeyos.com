@@ -176,8 +176,8 @@ const LandingPage = () => {
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3 with Double Gantry</h2>
             <img 
-              src="/images/micro-robotic-capsule.png" 
-              alt="micro-robotic-capsule" 
+              src="/images/v3-double-gantry.png" 
+              alt="v3-double-gantry" 
               className="mx-auto mb-6" 
               width={"100%"}
             />

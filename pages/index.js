@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Brain, Code, Book, ShoppingCart, Cpu, Monitor, Heart, Printer } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Logo from '../components/Logo';
+import { Image } from 'next/image';
 
 
 const LandingPage = () => {
@@ -70,11 +71,11 @@ const LandingPage = () => {
               Advancing healthcare through open-source robotics, VR simulation, and AI-powered medical technologies
             </p>
             <div className="flex justify-center gap-4">
-              <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg hover:shadow-xl">
+              <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg hover:shadow-xl" onClick={() => window.location.href = '#surgeyos-platform'}>
                 Get Started <ArrowRight className="w-4 h-4" />
               </button>
               <button className="bg-white bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-opacity-75 transition-all border border-gray-200">
-                View on GitHub <Code className="w-4 h-4" />
+                View on GitHub <Code className="w-4 h-4"/>
               </button>
             </div>
           </div>
@@ -141,6 +142,146 @@ const LandingPage = () => {
               <p className="text-gray-600">Hardware kits and components for your projects</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white" id="surgeyos-platform">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3</h2>
+            <img 
+              src="/images/v3-simple-gantry.png" 
+              alt="v3-simple-gantry" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+      
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3 with Double Gantry</h2>
+            <img 
+              src="/images/micro-robotic-capsule.png" 
+              alt="micro-robotic-capsule" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Microrobotic capsule prototype</h2>
+            <img 
+              src="/images/micro-robotic-capsule.png" 
+              alt="micro-robotic-capsule" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Custom medical robotic arm of 7 degrees of freedom</h2>
+            <img 
+              src="/images/custom-7dof-medical-robotic-arm.png" 
+              alt="custom-7dof-medical-robotic-arm" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Head immobilizers</h2>
+            <img 
+              src="/images/head-immobilizers.png" 
+              alt="head-immobilizers" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Laparoscopic tools testbed mounting-dock</h2>
+            <img 
+              src="/images/laparoscopic-tools-testbe-mounting-dock.png" 
+              alt="laparoscopic-tools-testbe-mounting-dock" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">Capstan drive prototype</h2>
+            <img 
+              src="/images/capstan-drive-prototype.png" 
+              alt="capstan-drive-prototype" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
         </div>
       </section>
 

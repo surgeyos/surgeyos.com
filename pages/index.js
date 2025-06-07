@@ -341,6 +341,62 @@ const LandingPage = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl text-center mb-10">SurgeyOS Virtual Reality</h2>
+            <img 
+              src="/images/33e416f83a0b417d8ddcfbadafddf971.JPG" 
+              alt="surgoys-vr" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <img 
+              src="/images/bed73d54cb9046c5b248498cf026eab7.JPG" 
+              alt="surgoys-vr" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <img 
+              src="/images/d6a932d2cbcd4d05b9ee05457997abdc.JPG" 
+              alt="surgoys-vr" 
+              className="mx-auto mb-6" 
+              width={"100%"}
+            />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Form Section */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">

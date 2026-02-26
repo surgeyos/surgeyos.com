@@ -241,12 +241,18 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3</h2>
-            <img 
-              src="/images/v3-simple-gantry.png" 
-              alt="v3-simple-gantry" 
-              className="mx-auto mb-6" 
-              width={"100%"}
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <img
+                src="/images/v3-simple-gantry.png"
+                alt="v3-simple-gantry"
+                className="w-full rounded-xl shadow-md"
+              />
+              <img
+                src="/images/mounting-detection.png"
+                alt="v3-simple-gantry"
+                className="w-full rounded-xl shadow-md"
+              />
+            </div>
           </motion.div>
         </div>
       </section>
@@ -261,11 +267,11 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3 with Double Gantry</h2>
-            <img 
-              src="/images/v3-double-gantry.png" 
-              alt="v3-double-gantry" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+            <img
+              src="/images/v3-double-gantry.png"
+              alt="v3-double-gantry"
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -284,8 +290,8 @@ const LandingPage = () => {
             <img 
               src="/images/micro-robotic-capsule.png" 
               alt="micro-robotic-capsule" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -304,8 +310,8 @@ const LandingPage = () => {
             <img 
               src="/images/custom-7dof-medical-robotic-arm.png" 
               alt="custom-7dof-medical-robotic-arm" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -324,8 +330,8 @@ const LandingPage = () => {
             <img 
               src="/images/head-immobilizers.png" 
               alt="head-immobilizers" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -344,8 +350,8 @@ const LandingPage = () => {
             <img 
               src="/images/laparoscopic-tools-testbe-mounting-dock.png" 
               alt="laparoscopic-tools-testbe-mounting-dock" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -364,8 +370,8 @@ const LandingPage = () => {
             <img 
               src="/images/capstan-drive-prototype.png" 
               alt="capstan-drive-prototype" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+              className="mx-auto mb-6 rounded-xl" 
+              width={"50%"}
             />
           </motion.div>
         </div>
@@ -381,47 +387,22 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Surgeyos prototype</h2>
-            <img 
-              src="/images/IMG_2678.jpeg" 
-              alt="surgoys-prototype" 
-              className="mx-auto mb-6" 
-              width={"100%"}
-            />
-          </motion.div>
-        </div>
-      </section>
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <img 
-              src="/images/IMG_2680.jpeg" 
-              alt="surgoys-prototype" 
-              className="mx-auto mb-6" 
-              width={"100%"}
-            />
-          </motion.div>
-        </div>
-      </section>
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <img 
-              src="/images/IMG_2681.jpeg" 
-              alt="surgoys-prototype" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <img
+                src="/images/IMG_2678.jpeg"
+                alt="surgoys-prototype-1"
+                className="w-full rounded-xl shadow-md"
+              />
+              <img
+                src="/images/IMG_2680.jpeg"
+                alt="surgoys-prototype-2"
+                className="w-full rounded-xl shadow-md"
+              />
+            </div>
+            <img
+              src="/images/IMG_2681.jpeg"
+              alt="surgoys-prototype-3"
+              className="mx-auto w-full md:w-1/2 rounded-xl shadow-md"
             />
           </motion.div>
         </div>
@@ -437,47 +418,22 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Virtual Reality</h2>
-            <img 
-              src="/images/33e416f83a0b417d8ddcfbadafddf971.JPG" 
-              alt="surgoys-vr" 
-              className="mx-auto mb-6" 
-              width={"100%"}
-            />
-          </motion.div>
-        </div>
-      </section>
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <img 
-              src="/images/bed73d54cb9046c5b248498cf026eab7.JPG" 
-              alt="surgoys-vr" 
-              className="mx-auto mb-6" 
-              width={"100%"}
-            />
-          </motion.div>
-        </div>
-      </section>
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <img 
-              src="/images/d6a932d2cbcd4d05b9ee05457997abdc.JPG" 
-              alt="surgoys-vr" 
-              className="mx-auto mb-6" 
-              width={"100%"}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <img
+                src="/images/33e416f83a0b417d8ddcfbadafddf971.JPG"
+                alt="surgoys-vr-1"
+                className="w-full rounded-xl shadow-md"
+              />
+              <img
+                src="/images/bed73d54cb9046c5b248498cf026eab7.JPG"
+                alt="surgoys-vr-2"
+                className="w-full rounded-xl shadow-md"
+              />
+            </div>
+            <img
+              src="/images/d6a932d2cbcd4d05b9ee05457997abdc.JPG"
+              alt="surgoys-vr-3"
+              className="mx-auto w-full md:w-1/2 rounded-xl shadow-md"
             />
           </motion.div>
         </div>

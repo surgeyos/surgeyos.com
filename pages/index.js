@@ -22,65 +22,153 @@ const LandingPage = () => {
       icon: <Heart className="w-6 h-6" />,
       description: "Humanoid robots for first aid training and demonstrations"
     },
-    {
-      title: "Medical 3D Printing",
-      icon: <Printer className="w-6 h-6" />,
-      description: "Advanced 3D printing solutions for medical applications"
-    }
+    // {
+    //   title: "Medical 3D Printing",
+    //   icon: <Printer className="w-6 h-6" />,
+    //   description: "Advanced 3D printing solutions for medical applications"
+    // }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <header className="relative overflow-hidden">
+      <header className="relative min-h-screen overflow-hidden flex flex-col">
         {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
-          {/* Animated circles */}
-          <div className="absolute top-20 left-20 w-64 h-64 bg-blue-200 rounded-full opacity-20 animate-pulse" />
-          <div className="absolute top-40 right-40 w-96 h-96 bg-teal-200 rounded-full opacity-20 animate-pulse delay-700" />
-          <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-cyan-200 rounded-full opacity-20 animate-pulse delay-500" />
-          
-          {/* Grid pattern overlay */}
-          <div className="absolute inset-0" 
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50 via-cyan-50 to-emerald-50">
+          <div className="hero-aurora absolute -inset-24 opacity-60" />
+          <motion.div
+            className="absolute -top-40 -left-24 h-[28rem] w-[28rem] rounded-full bg-cyan-300/45 blur-3xl"
+            animate={{
+              x: [0, 90, -30, 0],
+              y: [0, 60, 110, 0],
+              scale: [1, 1.18, 0.9, 1],
+            }}
+            transition={{
+              duration: 12,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute -right-40 top-12 h-[34rem] w-[34rem] rounded-full bg-blue-300/40 blur-3xl"
+            animate={{
+              x: [0, -120, -10, 0],
+              y: [0, 90, 20, 0],
+              scale: [1, 0.9, 1.12, 1],
+            }}
+            transition={{
+              duration: 14,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute -bottom-44 left-1/3 h-[24rem] w-[24rem] rounded-full bg-teal-300/45 blur-3xl"
+            animate={{
+              x: [0, -70, 45, 0],
+              y: [0, -90, -20, 0],
+              scale: [1, 1.2, 0.9, 1],
+            }}
+            transition={{
+              duration: 13,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+          />
+
+          <motion.div
+            className="absolute inset-y-0 -left-1/3 w-1/2 bg-gradient-to-r from-transparent via-white/35 to-transparent blur-2xl"
+            animate={{ x: ["0%", "240%"] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+          />
+
+          <div
+            className="hero-grid absolute inset-0"
             style={{
-              backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0)',
-              backgroundSize: '40px 40px'
-            }} />
+              backgroundImage:
+                "radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.08) 1px, transparent 0)",
+              backgroundSize: "38px 38px",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/45 via-white/15 to-white/60" />
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <Logo />  
             <div className="flex gap-6">
               <a href="#projects" className="text-gray-600 hover:text-blue-600">Projects</a>
-              <a href="#docs" className="text-gray-600 hover:text-blue-600">Documentation</a>
-              <a href="#blog" className="text-gray-600 hover:text-blue-600">Blog</a>
-              <a href="#shop" className="text-gray-600 hover:text-blue-600">Shop</a>
+              <a href="https://surgeyos.github.io/surgeyos-ros2-ws/#/" className="text-gray-600 hover:text-blue-600">Documentation</a>
+              {/* <a href="#blog" className="text-gray-600 hover:text-blue-600">Blog</a>
+              <a href="#shop" className="text-gray-600 hover:text-blue-600">Shop</a> */}
             </div>
           </div>
         </nav>
 
         {/* Hero content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Open Source Medical Robotics
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex items-center">
+          <div className="text-center w-full py-16 sm:py-20">
+            <h1 className="text-9xl font-bold text-gray-700 mb-6">
+              SurgeyOS
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Advancing healthcare through open-source robotics, VR simulation, and AI-powered medical technologies
             </p>
             <div className="flex justify-center gap-4">
-              <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg hover:shadow-xl" onClick={() => window.location.href = '#surgeyos-platform'}>
+              <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg hover:shadow-xl" onClick={() => window.location.href = 'https://surgeyos.github.io/surgeyos-ros2-ws/#/'}>
                 Get Started <ArrowRight className="w-4 h-4" />
               </button>
-              <button className="bg-white bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-opacity-75 transition-all border border-gray-200">
+              <button className="bg-white bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-opacity-75 transition-all border border-gray-200" onClick={() => window.open('https://github.com/surgeyos/surgeyos-ros2-ws', '_blank')}> 
                 View on GitHub <Code className="w-4 h-4"/>
               </button>
             </div>
           </div>
         </div>
       </header>
+
+      <style jsx>{`
+        .hero-aurora {
+          background: conic-gradient(
+            from 0deg,
+            rgba(56, 189, 248, 0.35),
+            rgba(45, 212, 191, 0.28),
+            rgba(59, 130, 246, 0.32),
+            rgba(16, 185, 129, 0.3),
+            rgba(56, 189, 248, 0.35)
+          );
+          filter: blur(80px);
+          animation: auroraSpin 18s linear infinite;
+        }
+
+        .hero-grid {
+          animation: gridShift 10s linear infinite;
+        }
+
+        @keyframes auroraSpin {
+          from {
+            transform: rotate(0deg) scale(1);
+          }
+          50% {
+            transform: rotate(180deg) scale(1.08);
+          }
+          to {
+            transform: rotate(360deg) scale(1);
+          }
+        }
+
+        @keyframes gridShift {
+          from {
+            background-position: 0 0;
+          }
+          to {
+            background-position: 38px 38px;
+          }
+        }
+      `}</style>
 
       <section className="py-16 px-6 bg-white text-center">
         <motion.div
@@ -100,13 +188,16 @@ const LandingPage = () => {
             medical technology accessible, affordable, and innovative. Join this effort of transforming healthcare one open-source
             contribution at a time.
           </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            SurgeyOS aims to be a more accessible and inexpensive tool to researchers, medical students and doctors. Typically, Surgery Robots are very expensive and there are many institutions that can’t afford them. SurgeyOS is an open source platform and thus any university can afford to build one and conduct research and help in understanding, improving and learning more about Surgery Robotics. 
+          </p>
         </motion.div>
       </section>
 
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-16">Our Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -125,22 +216,17 @@ const LandingPage = () => {
 
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+            <a href="https://surgeyos.github.io/surgeyos-ros2-ws/#/" target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
               <Book className="w-8 h-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Documentation</h3>
+              <h3 className="text-xl font-semibold mb-2">SurgeyOS ROS2 Workspace</h3>
               <p className="text-gray-600">Comprehensive guides for all our open-source projects</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+            </a>
+            {/* <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
               <Code className="w-8 h-8 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Blog</h3>
               <p className="text-gray-600">Latest updates, tutorials, and community stories</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
-              <ShoppingCart className="w-8 h-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Shop</h3>
-              <p className="text-gray-600">Hardware kits and components for your projects</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Brain, Code, Book, ShoppingCart, Cpu, Monitor, Heart, Printer } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Logo from '../components/Logo';
-import { Image } from 'next/image';
+import Image from 'next/image';
 
 
 const LandingPage = () => {
@@ -242,15 +242,21 @@ const LandingPage = () => {
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img
+              <Image
                 src="/images/v3-simple-gantry.png"
                 alt="v3-simple-gantry"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <img
+              <Image
                 src="/images/mounting-detection.png"
-                alt="v3-simple-gantry"
+                alt="mounting-detection"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </motion.div>
@@ -267,11 +273,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Platform v3 with Double Gantry</h2>
-            <img
+            <Image
               src="/images/v3-double-gantry.png"
               alt="v3-double-gantry"
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -287,11 +295,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Microrobotic capsule prototype</h2>
-            <img 
+            <Image
               src="/images/micro-robotic-capsule.png" 
               alt="micro-robotic-capsule" 
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -307,11 +317,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Custom medical robotic arm of 7 degrees of freedom</h2>
-            <img 
+            <Image
               src="/images/custom-7dof-medical-robotic-arm.png" 
               alt="custom-7dof-medical-robotic-arm" 
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -327,11 +339,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Head immobilizers</h2>
-            <img 
+            <Image
               src="/images/head-immobilizers.png" 
               alt="head-immobilizers" 
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -347,11 +361,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Laparoscopic tools testbed mounting-dock</h2>
-            <img 
+            <Image
               src="/images/laparoscopic-tools-testbe-mounting-dock.png" 
               alt="laparoscopic-tools-testbe-mounting-dock" 
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -367,11 +383,13 @@ const LandingPage = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl text-center mb-10">Capstan drive prototype</h2>
-            <img 
+            <Image
               src="/images/capstan-drive-prototype.png" 
               alt="capstan-drive-prototype" 
-              className="mx-auto mb-6 rounded-xl" 
-              width={"50%"}
+              className="mx-auto mb-6 w-full md:w-1/2 rounded-xl"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -388,21 +406,30 @@ const LandingPage = () => {
           >
             <h2 className="text-3xl text-center mb-10">Surgeyos prototype</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <img
+              <Image
                 src="/images/IMG_2678.jpeg"
                 alt="surgoys-prototype-1"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <img
+              <Image
                 src="/images/IMG_2680.jpeg"
                 alt="surgoys-prototype-2"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <img
+            <Image
               src="/images/IMG_2681.jpeg"
               alt="surgoys-prototype-3"
               className="mx-auto w-full md:w-1/2 rounded-xl shadow-md"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
@@ -419,21 +446,30 @@ const LandingPage = () => {
           >
             <h2 className="text-3xl text-center mb-10">SurgeyOS Virtual Reality</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <img
+              <Image
                 src="/images/33e416f83a0b417d8ddcfbadafddf971.JPG"
                 alt="surgoys-vr-1"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <img
+              <Image
                 src="/images/bed73d54cb9046c5b248498cf026eab7.JPG"
                 alt="surgoys-vr-2"
                 className="w-full rounded-xl shadow-md"
+                width={1600}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <img
+            <Image
               src="/images/d6a932d2cbcd4d05b9ee05457997abdc.JPG"
               alt="surgoys-vr-3"
               className="mx-auto w-full md:w-1/2 rounded-xl shadow-md"
+              width={1600}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
         </div>
